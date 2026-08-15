@@ -1,0 +1,43 @@
+{
+  "name": "dsh-global-search",
+  "version": "1.0.0",
+  "description": "DeepSeek Harness 全局对话内容搜索插件：跨所有工作区全文搜索会话内容（消息级命中、关键词高亮、一键跳转会话）",
+  "type": "module",
+  "main": "lib/index.js",
+  "exports": {
+    ".": {
+      "default": "./lib/index.js"
+    },
+    "./client": {
+      "default": "./lib/client.js"
+    },
+    "./package.json": "./package.json"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "inject": [
+        "@deepseek-ai/dsh-client-runtime",
+        "@deepseek-ai/dsh-client-ui-slots",
+        "@deepseek-ai/dsh-client-ui-sidebar"
+      ],
+      "platform": "web"
+    }
+  },
+  "files": [
+    "lib/index.js",
+    "lib/client.js",
+    "cordis.patch.yml"
+  ],
+  "keywords": [
+    "deepseek-harness",
+    "dsh",
+    "plugin",
+    "search",
+    "global-search",
+    "fulltext"
+  ],
+  "license": "MIT"
+}

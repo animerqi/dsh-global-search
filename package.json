@@ -4,6 +4,14 @@
   "description": "DeepSeek Harness 全局对话内容搜索插件：跨所有工作区全文搜索会话内容（消息级命中、关键词高亮、一键跳转会话）",
   "type": "module",
   "main": "lib/index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/animerqi/dsh-global-search.git"
+  },
+  "homepage": "https://github.com/animerqi/dsh-global-search",
+  "bugs": {
+    "url": "https://github.com/animerqi/dsh-global-search/issues"
+  },
   "exports": {
     ".": {
       "default": "./lib/index.js"

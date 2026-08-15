@@ -1,0 +1,11 @@
+# Node
+node_modules/
+
+# 系统 / 编辑器
+.DS_Store
+Thumbs.db
+*.log
+
+# 本地临时文件（token 等敏感文件绝不入库）
+.github-token.txt
+*.local
